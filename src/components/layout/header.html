@@ -1,0 +1,78 @@
+<!-- 
+  COMPONENT: Header / Navbar
+  VUE MIGRATION:
+  - In Laravel/Vue, save as: resources/js/Components/Navbar.vue (or Header.vue)
+  - Replace <a> links with Inertia <Link :href="...">
+  - Replace data-mobile-menu-toggle with Vue reactive: v-model:open="isOpen" or @click="isOpen = !isOpen"
+-->
+<header data-site-header class="site-header sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md">
+  <div class="container mx-auto flex h-20 items-center justify-between">
+    <!-- Brand Logo -->
+    <a href="#home" class="flex shrink-0 items-center" aria-label="Horizon Global home">
+      <img src="/src/assets/images/logo.png" alt="Horizon Global" class="h-14 w-auto object-contain" />
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#606161]" aria-label="Primary navigation">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <div data-dropdown class="nav-dropdown group relative">
+        <button type="button" data-dropdown-toggle class="nav-link inline-flex items-center gap-1" aria-haspopup="true" aria-expanded="false">
+          Our Sister Concerns
+          <svg class="dropdown-chevron h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m9 6 6 6-6 6" />
+          </svg>
+        </button>
+        <div data-dropdown-menu class="nav-dropdown-menu invisible absolute left-1/2 top-full z-50 mt-3 w-56 -translate-x-1/2 translate-y-1 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+          <a href="#projects" class="block border-b border-[#606161]/10 bg-white px-4 py-3 text-sm text-[#606161] hover:bg-[#A47430] hover:text-white">Bidesh Jatra Global Tours &amp; Travels</a>
+          <a href="#projects" class="block border-b border-[#606161]/10 bg-white px-4 py-3 text-sm text-[#606161] hover:bg-[#A47430] hover:text-white">Bidesh Jatra Global Education</a>
+          <a href="#projects" class="block border-b border-[#606161]/10 bg-white px-4 py-3 text-sm text-[#606161] hover:bg-[#A47430] hover:text-white">Bidesh Jatra Enterprise</a>
+          <a href="#projects" class="block border-b border-[#606161]/10 bg-white px-4 py-3 text-sm text-[#606161] hover:bg-[#A47430] hover:text-white">Medivisa Support Center</a>
+          <a href="#projects" class="block bg-white px-4 py-3 text-sm text-[#606161] hover:bg-[#A47430] hover:text-white">Bimatech</a>
+        </div>
+      </div>
+      <a href="#projects" class="nav-link">Projects &amp; Impact</a>
+    </nav>
+
+    <div class="hidden md:flex items-center">
+      <a href="#contact" class="btn-primary">Get In Touch</a>
+    </div>
+
+    <!-- Mobile Hamburger Toggle -->
+    <div class="flex items-center gap-2 md:hidden">
+      <a href="#contact" class="btn-primary px-4 py-2 text-xs">Get In Touch</a>
+      <button 
+        type="button" 
+        data-mobile-menu-toggle 
+        aria-expanded="false" 
+        aria-label="Open mobile menu" 
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#606161]/20 text-[#606161] hover:bg-[#A47430] hover:text-white"
+      >
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Drawer Dropdown -->
+  <div data-mobile-menu class="hidden border-b border-[#606161]/15 bg-white px-4 py-6 md:hidden">
+    <nav class="flex flex-col gap-4 text-base font-medium text-[#606161]" aria-label="Mobile navigation">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <details class="group">
+        <summary class="flex cursor-pointer list-none items-center justify-between py-1 text-[#606161]">Our Sister Concerns <span class="text-[#A47430]">+</span></summary>
+        <div class="mt-3 flex flex-col gap-3 border-l-2 border-[#A47430] pl-4 text-sm">
+          <a href="#projects" class="text-[#606161] hover:text-[#A47430]">Bidesh Jatra Global Tours &amp; Travels</a>
+          <a href="#projects" class="text-[#606161] hover:text-[#A47430]">Bidesh Jatra Global Education</a>
+          <a href="#projects" class="text-[#606161] hover:text-[#A47430]">Bidesh Jatra Enterprise</a>
+          <a href="#projects" class="text-[#606161] hover:text-[#A47430]">Medivisa Support Center</a>
+          <a href="#projects" class="text-[#606161] hover:text-[#A47430]">Bimatech</a>
+        </div>
+      </details>
+      <a href="#projects" class="nav-link">Projects &amp; Impact</a>
+    </nav>
+  </div>
+</header>
+
+<div data-mobile-backdrop class="fixed inset-0 z-30 hidden bg-slate-900/50 backdrop-blur-sm md:hidden"></div>

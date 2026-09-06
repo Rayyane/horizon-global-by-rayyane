@@ -1,0 +1,31 @@
+<!-- 
+  UI COMPONENT: Buttons
+  VUE MIGRATION:
+  - In Laravel/Vue, save as: resources/js/Components/PrimaryButton.vue, SecondaryButton.vue, DangerButton.vue
+  - Use <button :type="type" :disabled="disabled" class="...">
+-->
+
+<!-- Primary Button -->
+<button type="button" class="inline-flex items-center justify-center font-medium rounded-lg bg-brand-600 px-5 py-2.5 text-sm text-white shadow-sm hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 transition-all duration-200 disabled:opacity-50">
+  Primary Action
+</button>
+
+<!-- Secondary Button (Outline / Subdued) -->
+<button type="button" class="inline-flex items-center justify-center font-medium rounded-lg border border-secondary-500/30 bg-white px-5 py-2.5 text-sm text-secondary-700 shadow-sm hover:bg-secondary-50 hover:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-400 focus:ring-offset-2 transition-all duration-200 dark:border-secondary-500/50 dark:bg-surface-900 dark:text-secondary-300 dark:hover:bg-secondary-950/40">
+  Secondary Action
+</button>
+
+<!-- Secondary Button (Solid) -->
+<button type="button" class="inline-flex items-center justify-center font-medium rounded-lg bg-secondary-500 px-5 py-2.5 text-sm text-white shadow-sm hover:bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-secondary-400 focus:ring-offset-2 transition-all duration-200">
+  Secondary Solid
+</button>
+
+<!-- Outline Button -->
+<button type="button" class="inline-flex items-center justify-center font-medium rounded-lg border border-brand-600 px-5 py-2.5 text-sm text-brand-600 hover:bg-brand-50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 transition-all duration-200 dark:border-brand-400 dark:text-brand-400 dark:hover:bg-brand-950/40">
+  Outline Action
+</button>
+
+<!-- Danger Button -->
+<button type="button" class="inline-flex items-center justify-center font-medium rounded-lg bg-rose-600 px-5 py-2.5 text-sm text-white shadow-sm hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 transition-all duration-200">
+  Delete / Danger
+</button>

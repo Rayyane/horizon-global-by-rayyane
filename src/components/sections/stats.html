@@ -1,0 +1,28 @@
+<!-- 
+  COMPONENT: Stats / Metrics Section
+  VUE MIGRATION:
+  - In Laravel/Vue, save as: resources/js/Components/Sections/Stats.vue
+  - Values can be reactive counts or animated counters with Vue Transition
+-->
+<section id="stats" class="py-20 border-y border-slate-200/80 bg-white dark:border-slate-800/80 dark:bg-surface-950">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100 dark:divide-slate-800">
+      <div class="pt-4 md:pt-0">
+        <div class="text-4xl sm:text-5xl font-extrabold text-brand-600 dark:text-brand-400 tracking-tight">99.99%</div>
+        <div class="mt-2 text-sm font-medium text-content dark:text-slate-400">Guaranteed SLA Uptime</div>
+      </div>
+      <div class="pt-4 md:pt-0">
+        <div class="text-4xl sm:text-5xl font-extrabold text-secondary-600 dark:text-secondary-400 tracking-tight">180M+</div>
+        <div class="mt-2 text-sm font-medium text-content dark:text-slate-400">API Requests Daily</div>
+      </div>
+      <div class="pt-4 md:pt-0">
+        <div class="text-4xl sm:text-5xl font-extrabold text-brand-600 dark:text-brand-400 tracking-tight">&lt;15ms</div>
+        <div class="mt-2 text-sm font-medium text-content dark:text-slate-400">Global Average P95 Latency</div>
+      </div>
+      <div class="pt-4 md:pt-0">
+        <div class="text-4xl sm:text-5xl font-extrabold text-secondary-600 dark:text-secondary-400 tracking-tight">140+</div>
+        <div class="mt-2 text-sm font-medium text-content dark:text-slate-400">Countries Connected</div>
+      </div>
+    </div>
+  </div>
+</section>

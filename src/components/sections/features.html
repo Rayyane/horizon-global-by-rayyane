@@ -1,0 +1,51 @@
+<!-- 
+  COMPONENT: Features Section
+  VUE MIGRATION:
+  - In Laravel/Vue, save as: resources/js/Components/Sections/Features.vue
+  - Features array can be passed via props or Inertia page props:
+    defineProps({ features: Array })
+-->
+<section id="about" class="bg-white py-24">
+  <div class="container mx-auto">
+    <div class="grid gap-10 lg:grid-cols-2 lg:gap-16">
+      <div class="grid gap-8 lg:grid-rows-3">
+        <div class="flex flex-col justify-center">
+          <h2 class="max-w-xl text-3xl font-semibold leading-tight tracking-normal text-[#606161] sm:text-4xl">
+            One Group.<br /><span class="text-[#A47430]">Five Dedicated Divisions.</span><br /> <span class="text-[#A47430]">Complete Global Solutions.</span>
+          </h2>
+          <p class="mt-5 max-w-xl text-sm leading-relaxed text-[#606161]">
+            At Horizon Global Group, each of our core solutions is powered by a dedicated sister concern&mdash;ensuring you receive end-to-end service from industry experts.
+          </p>
+        </div>
+        <article class="division-card">
+          <h3 class="text-xl font-semibold text-[#606161]">International Travel Solutions</h3>
+          <p class="mt-3 text-sm font-semibold text-[#A47430]">Powered By - Bidesh Jatra Global Tours &amp; Travels</p>
+          <p class="mt-4 text-sm leading-relaxed text-[#606161]">Complete travel management for seamless global movement. From air ticketing and custom holiday packages to visa processing, corporate travel, and Hajj &amp; Umrah services.</p>
+        </article>
+        <article class="division-card">
+          <h3 class="text-xl font-semibold text-[#606161]">Global Education Consultancy</h3>
+          <p class="mt-3 text-sm font-semibold text-[#A47430]">Powered By - Bidesh Jatra Global Education</p>
+          <p class="mt-4 text-sm leading-relaxed text-[#606161]">Turning study abroad dreams into reality. Expert guidance through student counseling, university admissions, scholarship assistance, visa processing, and pre-departure briefings.</p>
+        </article>
+      </div>
+
+      <div class="grid gap-8 lg:grid-rows-3">
+        <article class="division-card">
+          <h3 class="text-xl font-semibold text-[#606161]">Overseas Recruitment &amp; Employment</h3>
+          <p class="mt-3 text-sm font-semibold text-[#A47430]">Powered By - Bidesh Jatra Enterprise</p>
+          <p class="mt-4 text-sm leading-relaxed text-[#606161]">Ethical workforce solutions connecting talent with international employers. Dedicated to foreign job placement, employer partnerships, and strategic manpower development.</p>
+        </article>
+        <article class="division-card">
+          <h3 class="text-xl font-semibold text-[#606161]">Cross-Border Medical Support</h3>
+          <p class="mt-3 text-sm font-semibold text-[#A47430]">Powered By - Medivisa Support Center</p>
+          <p class="mt-4 text-sm leading-relaxed text-[#606161]">Comprehensive international healthcare facilitation. Assisting patients with foreign hospital referrals, medical visas, appointment scheduling, and end-to-end treatment coordination.</p>
+        </article>
+        <article class="division-card">
+          <h3 class="text-xl font-semibold text-[#606161]">Technology & Digital Innovation</h3>
+          <p class="mt-3 text-sm font-semibold text-[#A47430]">Powered By - Bimatech</p>
+          <p class="mt-4 text-sm leading-relaxed text-[#606161]">Driving digital growth and operational excellence. Delivering custom software development, mobile apps, business process automation, and digital transformation for modern enterprises.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
