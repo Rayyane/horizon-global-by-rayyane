@@ -71,6 +71,9 @@ export function initNavigation() {
 
   toggleBtn.addEventListener("click", () => toggle());
   backdrop?.addEventListener("click", () => toggle(false));
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => toggle(false));
+  });
 
   // Close when pressing ESC
   window.addEventListener("keydown", (e) => {

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Bimatech — Horizon Global Group</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body
+    class="bg-white text-content antialiased selection:bg-secondary selection:text-white flex flex-col min-h-screen font-sans">
+
+    <!-- ========================================== -->
+    <!-- 1. HEADER / NAVIGATION BAR                -->
+    <!-- ========================================== -->
+    <div data-component="header"></div>
+    <header data-site-header
+        class="hidden site-header sticky top-0 z-40 w-full border-b border-[#606161]/15 bg-white/95 backdrop-blur-md">
+        <div class="container mx-auto flex h-20 items-center justify-between">
+            <a href="index.html#home" class="flex shrink-0 items-center" aria-label="Horizon Global home">
+                <img src="/src/assets/images/logo.png" alt="Horizon Global" class="h-14 w-auto object-contain" />
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#606161]"
+                aria-label="Primary navigation">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="about-us.html#about" class="nav-link">About Us</a>
+                <div class="nav-dropdown group relative">
+                    <button type="button" class="nav-link inline-flex items-center gap-1" aria-haspopup="true">
+                        Our Sister Concerns
+                        <svg class="h-3.5 w-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div
+                        class="nav-dropdown-menu invisible absolute left-1/2 top-full z-50 mt-3 w-56 -translate-x-1/2 translate-y-1 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                        <a href="bidesh-jatra-tours.html"
+                            class="block border-b border-[#606161]/10 bg-white px-4 py-3 text-sm text-[#606161] transition-colors hover:bg-[#A47430] hover:text-white">Tours
+                            & Travels</a>
+                        <a href="bidesh-jatra-education.html"
+                            class="block border-b border-[#606161]/10 bg-white px-4 py-3 text-sm text-[#606161] transition-colors hover:bg-[#A47430] hover:text-white">Education</a>
+                        <a href="bidesh-jatra-enterprise.html"
+                            class="block border-b border-[#606161]/10 bg-white px-4 py-3 text-sm text-[#606161] transition-colors hover:bg-[#A47430] hover:text-white">Enterprise</a>
+                        <a href="medivisa.html"
+                            class="block border-b border-[#606161]/10 bg-white px-4 py-3 text-sm text-[#606161] transition-colors hover:bg-[#A47430] hover:text-white">Medivisa</a>
+                        <a href="bimatech.html"
+                            class="block bg-white px-4 py-3 text-sm text-[#606161] transition-colors hover:bg-[#A47430] hover:text-white">Bimatech</a>
+                    </div>
+                </div>
+                <a href="index.html#projects" class="nav-link">Projects &amp; Impact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center">
+                <a href="#contact" class="btn-primary">Get In Touch</a>
+            </div>
+
+            <div class="flex items-center gap-2 md:hidden">
+                <a href="#contact" class="btn-primary px-4 py-2 text-xs">Get In Touch</a>
+                <button type="button" data-mobile-menu-toggle aria-expanded="false" aria-label="Open mobile menu"
+                    class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#606161]/20 text-[#606161] hover:bg-[#A47430] hover:text-white">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div data-mobile-menu class="hidden border-b border-[#606161]/15 bg-white px-4 py-6 md:hidden">
+            <nav class="flex flex-col gap-4 text-base font-medium text-[#606161]" aria-label="Mobile navigation">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="about-us.html#about" class="nav-link">About Us</a>
+                <details class="group">
+                    <summary class="flex cursor-pointer list-none items-center justify-between py-1 text-[#606161]">Our
+                        Sister Concerns <span class="text-[#A47430]">+</span></summary>
+                    <div class="mt-3 flex flex-col gap-3 border-l-2 border-[#A47430] pl-4 text-sm">
+                        <a href="bidesh-jatra-tours.html" class="text-[#606161] hover:text-[#A47430]">Tours &
+                            Travels</a>
+                        <a href="bidesh-jatra-education.html" class="text-[#606161] hover:text-[#A47430]">Education</a>
+                        <a href="bidesh-jatra-enterprise.html"
+                            class="text-[#606161] hover:text-[#A47430]">Enterprise</a>
+                        <a href="medivisa.html" class="text-[#606161] hover:text-[#A47430]">Medivisa</a>
+                        <a href="bimatech.html" class="text-[#606161] hover:text-[#A47430]">Bimatech</a>
+                    </div>
+                </details>
+                <a href="index.html#projects" class="nav-link">Projects &amp; Impact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- MAIN CONTENT CONTAINER                    -->
+    <!-- ========================================== -->
+    <main class="flex-1">
+
+        <section class="bg-white py-16 md:py-20 lg:py-24">
+            <div class="container mx-auto">
+                <div class="flex flex-col items-center gap-12 md:flex-row md:gap-10 lg:gap-16">
+                    <div class="w-full md:w-7/12">
+                        <h1
+                            class="max-w-2xl text-5xl font-bold leading-tight tracking-tight text-[#A47430] sm:text-4xl lg:text-6xl">
+                            <span class="text-[#606161]">Digital Transformation</span></br> & Smart Tech Solutions
+                        </h1>
+                        <p class="mt-6 max-w-2xl text-base leading-normal text-[#606161] sm:text-lg">
+                            Accelerating business growth with custom software development, mobile apps, and digital platforms.
+                        </p>
+                        <div class="mt-8">
+                            <a href="#contact" class="btn-primary">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="w-full md:ml-auto md:w-4/12 md:self-center">
+                        <img src="/src/assets/images/hero_img.png" alt="Travel Solutions"
+                            class="aspect-square w-full rounded-3xl object-cover" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================================== -->
+        <!-- 2. CORE SERVICES SECTION                  -->
+        <!-- ========================================== -->
+
+
+        <section id="core-services" class="bg-white py-24">
+            <div class="container mx-auto">
+                <div class="grid gap-10 lg:grid-cols-2 lg:gap-16">
+                    <div class="grid gap-8 lg:grid-rows-2">
+                        <div class="flex flex-col justify-center">
+                            <h2
+                                class="max-w-xl text-5xl font-semibold leading-tight tracking-normal text-[#606161] sm:text-5xl">
+                                OUR<br /><span class="text-[#A47430]">CORE SERVICES</span>
+                            </h2>
+                            <p class="mt-5 max-w-xl text-sm leading-relaxed text-[#606161]">
+                                Bimatech serves as the technology and innovation hub of Horizon Global Group. We partner with enterprises, startups, and institutions to deliver high-performance digital products, automate business workflows, and design robust web and mobile software solutions.
+                            </p>
+                        </div>
+                        <article class="division-card">
+                            <h3 class="text-xl font-semibold text-[#A47430]">Custom Software Development</h3>
+                            
+                            <p class="mt-4 text-sm leading-relaxed text-[#606161]">
+                                Scalable web and desktop applications built for unique business workflows.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="grid gap-8 lg:grid-rows-3">
+                        <article class="division-card">
+                            <h3 class="text-xl font-semibold text-[#A47430]">Mobile App Development</h3>
+                            
+                            <p class="mt-4 text-sm leading-relaxed text-[#606161]">
+                                Native and cross-platform apps for iOS and Android.
+                            </p>
+                        </article>
+                        <article class="division-card">
+                            <h3 class="text-xl font-semibold text-[#A47430]">Business Automation & Digital Transformation</h3>
+                            
+                            <p class="mt-4 text-sm leading-relaxed text-[#606161]">
+                                Streamlining operations through smart tech integrations.
+                            </p>
+                        </article>
+                        <article class="division-card">
+                            <h3 class="text-xl font-semibold text-[#A47430]">Branding & Digital Strategy</h3>
+                            
+                            <p class="mt-4 text-sm leading-relaxed text-[#606161]">
+                                Full-spectrum corporate digital presence and online platforms.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 4. CALL TO ACTION SECTION                 -->
+        <!-- ========================================== -->
+        <section id="contact" class="bg-white py-20 md:py-24">
+            <div class="container mx-auto">
+                <div class="flex flex-col items-stretch gap-12 md:flex-row md:gap-10 lg:gap-16">
+                    <div class="flex w-full flex-col justify-center md:w-8/12">
+                        <h2
+                            class="max-w-3xl text-3xl font-bold leading-normal tracking-normal text-[#A47430] sm:text-4xl lg:text-5xl">
+                            Transform Your Business<br> With Technology
+                        </h2>
+                        <p class="mt-6 max-w-xl text-base leading-relaxed text-[#606161] sm:text-lg">
+                            Contact Bimatech to bring your digital vision to life with cutting-edge solutions and
+                            strategic innovation.
+                        </p>
+                        <div class="mt-8">
+                            <a href="#contact" class="btn-primary">Get in Touch</a>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:flex w-full items-center justify-center md:w-4/12">
+                        <img src="/src/assets/images/watermark_removed_bg.png" alt="Bimatech watermark"
+                            class="h-full max-h-[18rem] w-full object-contain" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                    -->
+    <!-- ========================================== -->
+    <div data-component="footer"></div>
+    <footer data-site-footer class="hidden mt-auto border-t border-[#606161]/15 bg-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid gap-8 md:grid-cols-4 lg:grid-cols-5">
+                <div class="md:col-span-1">
+                    <img src="/src/assets/images/logo.png" alt="Horizon Global" class="h-12 w-auto object-contain" />
+                    <p class="mt-4 text-sm text-[#606161]">
+                        Horizon Global Group — Your Gateway to Global Opportunities
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-[#606161]">Company</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="index.html#home" class="text-sm text-[#606161] hover:text-[#A47430]">Home</a></li>
+                        <li><a href="about-us.html#about" class="text-sm text-[#606161] hover:text-[#A47430]">About
+                                Us</a></li>
+                        <li><a href="index.html#projects"
+                                class="text-sm text-[#606161] hover:text-[#A47430]">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-[#606161]">Sister Concerns</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="bidesh-jatra-tours.html" class="text-sm text-[#606161] hover:text-[#A47430]">Tours
+                                & Travels</a></li>
+                        <li><a href="bidesh-jatra-education.html"
+                                class="text-sm text-[#606161] hover:text-[#A47430]">Education</a></li>
+                        <li><a href="bidesh-jatra-enterprise.html"
+                                class="text-sm text-[#606161] hover:text-[#A47430]">Enterprise</a></li>
+                        <li><a href="medivisa.html" class="text-sm text-[#606161] hover:text-[#A47430]">Medivisa</a>
+                        </li>
+                        <li><a href="bimatech.html" class="text-sm text-[#606161] hover:text-[#A47430]">Bimatech</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-[#606161]">Support</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#contact" class="text-sm text-[#606161] hover:text-[#A47430]">Contact Us</a></li>
+                        <li><a href="#" class="text-sm text-[#606161] hover:text-[#A47430]">FAQs</a></li>
+                        <li><a href="#" class="text-sm text-[#606161] hover:text-[#A47430]">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8 border-t border-[#606161]/15 pt-8">
+                <p class="text-center text-sm text-[#606161]">
+                    &copy; 2024 Horizon Global Group. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- SCRIPTS                                   -->
+    <!-- ========================================== -->
+    <script type="module" src="/src/js/main.js"></script>
+
+</body>
+
+</html>

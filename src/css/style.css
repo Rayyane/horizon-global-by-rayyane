@@ -82,6 +82,10 @@
     @apply flex h-full flex-col justify-center rounded-2xl bg-[#A47430]/15 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-md;
   }
 
+  .division-card-2 {
+    @apply flex h-full flex-col justify-center rounded-2xl bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-md border-2 border-[#A47430];
+  }
+
   .organogram-parent {
     @apply relative z-10 mx-auto flex w-fit flex-col items-center rounded-2xl border-2 border-[#A47430] bg-white px-8 py-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md;
   }
